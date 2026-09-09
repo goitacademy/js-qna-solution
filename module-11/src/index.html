@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук товарів</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Пошук товарів</h1>
+      <p class="description">
+        Введіть назву товару, щоб знайти його у каталозі.
+      </p>
+
+      <form class="search-form" autocomplete="off">
+        <input
+          type="text"
+          name="query"
+          placeholder="Наприклад, phone"
+          aria-label="Назва товару"
+        />
+        <button type="submit">Знайти</button>
+      </form>
+
+      <div class="loader is-hidden" aria-label="Завантаження"></div>
+      <p class="message"></p>
+      <ul class="product-list"></ul>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

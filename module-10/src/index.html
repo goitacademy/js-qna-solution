@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q&A: асинхронний JavaScript</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: min(100% - 32px, 720px);
+        margin: 0 auto;
+        padding: 48px 0;
+        color: #172033;
+        background: #f4f7fb;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+      }
+
+      .task-card {
+        padding: 24px;
+        background: #fff;
+        border: 1px solid #dbe3ef;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
+      }
+
+      .task-card h1,
+      .task-card p {
+        margin-top: 0;
+      }
+
+      button,
+      select {
+        padding: 10px 16px;
+        border-radius: 8px;
+        font: inherit;
+      }
+
+      button {
+        color: #fff;
+        background: #4f46e5;
+        border: 0;
+        cursor: pointer;
+      }
+
+      button:hover:not(:disabled) {
+        background: #4338ca;
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      select {
+        min-width: 180px;
+        margin-right: 8px;
+        background: #fff;
+        border: 1px solid #cbd5e1;
+      }
+
+      .result {
+        min-height: 24px;
+        margin: 16px 0 0;
+        color: #334155;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Задача 1 -->
+    <!-- <section class="task-card">
+      <h1>Відкладене збереження</h1>
+      <button type="button" class="js-notification-button">
+        Зберегти дані
+      </button>
+      <p class="result js-notification"></p>
+    </section> -->
+
+    <!-- Задача 2
+    <section class="task-card">
+      <h1>Відлік до події</h1>
+      <button type="button" class="js-countdown-button">
+        Запустити відлік
+      </button>
+      <p class="result js-countdown">Натисніть кнопку</p>
+    </section> -->
+
+    <!-- Задача 3
+    <section class="task-card">
+      <h1>Перевірка залишку</h1>
+      <button type="button" class="js-stock-button">Перевірити товар</button>
+      <p class="result js-stock-result"></p>
+    </section> -->
+
+    <!-- Задача 4
+    <section class="task-card">
+      <h1>Кінні перегони</h1>
+      <p>Оберіть коня, на якого хочете зробити ставку.</p>
+      <select class="js-bet-select"></select>
+      <button type="button" class="js-race-button">Запустити заїзд</button>
+      <p class="result js-race-status">Оберіть коня та запустіть заїзд</p>
+      <p class="result js-race-result"></p>
+    </section> -->
+
+    <!-- Увімкніть розмітку та один відповідний файл. -->
+    <!-- <script src="./js/01-delayed-notification.js" type="module"></script> -->
+    <!-- <script src="./js/02-event-countdown.js" type="module"></script> -->
+    <!-- <script src="./js/03-stock-promise.js" type="module"></script> -->
+    <!-- <script src="./js/04-horse-race.js" type="module"></script> -->
+  </body>
+</html>

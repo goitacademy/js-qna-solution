@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Планувальник подій</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Планувальник подій</h1>
+      <p class="description">Додайте подію, виберіть дату й час</p>
+
+      <form class="event-form" autocomplete="off">
+        <label>
+          Назва події
+          <input
+            type="text"
+            name="title"
+            placeholder="Консультація з ментором"
+          />
+        </label>
+
+        <label>
+          Дата і час
+          <input
+            type="text"
+            name="date"
+            class="js-date-input"
+            placeholder="Оберіть дату і час"
+          />
+        </label>
+
+        <button type="submit">Додати подію</button>
+      </form>
+
+      <h2>Заплановані події</h2>
+      <ul class="event-list"></ul>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

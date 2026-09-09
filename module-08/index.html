@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q&A: події, делегування та бібліотеки</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 48px 24px;
+        color: #172033;
+        background: #f4f7fb;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      button {
+        padding: 10px 16px;
+        color: #fff;
+        background: #4f46e5;
+        border: 0;
+        border-radius: 8px;
+        font: inherit;
+        cursor: pointer;
+        transition:
+          background-color 150ms ease,
+          transform 150ms ease;
+      }
+
+      button:hover {
+        background: #4338ca;
+        transform: translateY(-1px);
+      }
+
+      .js-actions,
+      .js-menu,
+      .periods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 16px;
+        background: #fff;
+        border: 1px solid #dbe3ef;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
+      }
+
+      [data-action='delete'] {
+        background: #dc2626;
+      }
+
+      [data-action='delete']:hover {
+        background: #b91c1c;
+      }
+
+      .is-active {
+        color: #1e1b4b;
+        background: #facc15;
+      }
+
+      .is-active:hover {
+        background: #eab308;
+      }
+
+      .card {
+        max-width: 320px;
+        padding: 24px;
+        background: #fff;
+        border: 1px solid #dbe3ef;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
+      }
+
+      .card h2 {
+        margin: 0 0 16px;
+      }
+
+      .chart-wrapper {
+        max-width: 760px;
+        padding: 24px;
+        background: #fff;
+        border: 1px solid #dbe3ef;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
+      }
+
+      .periods {
+        margin-bottom: 16px;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .js-chart-summary {
+        min-height: 24px;
+        margin: 0 0 16px;
+        color: #475569;
+        font-weight: 600;
+      }
+
+      #sales-chart {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="js-actions">
+      <button type="button" data-action="save">Зберегти</button>
+      <button type="button" data-action="delete">Видалити</button>
+    </div> -->
+
+    <!-- <nav class="js-menu">
+      <button type="button" data-page="home">Головна</button>
+      <button type="button" data-page="catalog">Каталог</button>
+    </nav> -->
+
+    <!-- <article class="card js-card">
+      <h2>Картка товару</h2>
+      <button type="button" class="js-buy">Купити</button>
+    </article> -->
+
+    <!-- <section class="chart-wrapper">
+      <div class="periods js-periods">
+        <button type="button" data-period="week" class="is-active">
+          Тиждень
+        </button>
+        <button type="button" data-period="month">Місяць</button>
+      </div>
+      <p class="js-chart-summary"></p>
+      <canvas id="sales-chart"></canvas>
+    </section> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    <!-- Увімкніть лише один навчальний файл за раз. -->
+    <!-- <script src="./js/01-target-button.js" type="module"></script> -->
+    <!-- <script src="./js/02-user-data.js" type="module"></script> -->
+    <!-- <script src="./js/03-menu-delegation.js" type="module"></script> -->
+    <!-- <script src="./js/04-stop-propagation.js" type="module"></script> -->
+    <!-- <script src="./js/05-sales-chart.js" type="module"></script> -->
+  </body>
+</html>
