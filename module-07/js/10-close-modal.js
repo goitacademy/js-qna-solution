@@ -18,5 +18,12 @@ function handleKeydown(event) {
   closeModal();
 }
 
+function handleClickBackdrop(event) {
+  if (event.target === event.currentTarget) {
+    closeModal();
+  }
+}
+
 openModalButtonEl.addEventListener('click', openModal);
 closeModalButtonEl.addEventListener('click', closeModal);
+modalEl.addEventListener('click', handleClickBackdrop);

@@ -3,9 +3,9 @@ const items = [
   { name: 'Чай', price: 160 },
 ];
 const productsEl = document.querySelector('.js-products');
-const productElements = items.map(item => {
-  const itemEl = document.createElement('li');
-  itemEl.textContent = `${item.name} — ${item.price} грн`;
-  return itemEl;
-});
-productsEl.append(...productElements);
+
+const productsMarkup = items
+  .map(item => `<li>${item.name} — ${item.price} грн</li>`)
+  .join('');
+
+productsEl.insertAdjacentHTML('beforeend', productsMarkup);

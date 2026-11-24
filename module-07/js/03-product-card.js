@@ -10,5 +10,8 @@ titleEl.textContent = product.name;
 const priceEl = document.createElement('p');
 priceEl.textContent = `${product.price} грн`;
 
-cardEl.append(titleEl, priceEl);
+const availableEl = document.createElement('p');
+availableEl.textContent = product.available ? 'В наявності' : 'Товар відсутній';
+
+cardEl.append(titleEl, priceEl, availableEl);
 containerEl.append(cardEl);

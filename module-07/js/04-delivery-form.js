@@ -3,8 +3,17 @@ const summaryEl = document.querySelector('.js-summary');
 
 formEl.addEventListener('submit', event => {
   event.preventDefault();
-  const { name, city } = event.currentTarget.elements;
-  const delivery = { name: name.value, city: city.value };
+  const formData = new FormData(event.currentTarget);
+  const name = formData.get('name');
+  const city = formData.get('city');
 
-  summaryEl.textContent = `Одержувач: ${delivery.name}, місто: ${delivery.city}`;
+  const deliveryData = { name, city };
+
+  // або
+  // const deliveryData = {
+  //   name: formData.get('name'),
+  //   city: formData.get('city'),
+  // };
+
+  summaryEl.textContent = `Одержувач: ${deliveryData.name}, місто: ${deliveryData.city}`;
 });

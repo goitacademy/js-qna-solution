@@ -33,7 +33,7 @@ function removeOrder(items, orderId) {
 }
 
 function handleRemoveOrder(event) {
-  const orderId = Number(event.currentTarget.dataset.orderId);
+  const orderId = Number(event.currentTarget.getAttribute('data-order-id'));
 
   orders = removeOrder(orders, orderId);
   renderOrders(orders);
