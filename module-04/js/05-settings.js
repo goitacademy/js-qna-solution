@@ -1,16 +1,12 @@
 /**
  * Рішення для ментора: «Оновлення налаштувань»
  *
- * rest збирає додаткові об’єкти в масив. Spread створює поверхневу копію.
- * На кожній ітерації властивості settings і custom об’єднуються в новий об’єкт;
+ * Властивості defaults і customSettings об’єднуються в новий об’єкт;
  * однакові ключі праворуч перезаписують попередні значення.
  */
-function createSettings(defaults, ...customSettings) {
-  let settings = { ...defaults };
 
-  for (const custom of customSettings) {
-    settings = { ...settings, ...custom };
-  }
+function createSettings(defaults, customSettings) {
+  let settings = Object.assign({}, defaults, customSettings);
 
   return settings;
 }
@@ -21,6 +17,4 @@ const defaults = {
   notifications: true,
 };
 
-console.log(
-  createSettings(defaults, { theme: 'dark' }, { notifications: false })
-);
+console.log(createSettings(defaults, { theme: 'dark', notifications: false }));
